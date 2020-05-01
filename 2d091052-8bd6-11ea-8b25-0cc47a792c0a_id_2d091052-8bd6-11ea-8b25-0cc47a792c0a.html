@@ -1,0 +1,525 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:41.9px;color:rgb(12,45,72);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:41.9px;color:rgb(12,45,72);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:21.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:21.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:35.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:35.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:14.1px;color:rgb(12,45,72);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:14.1px;color:rgb(12,45,72);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:35.1px;color:rgb(46,139,191);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:35.1px;color:rgb(46,139,191);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:18.1px;color:rgb(191,200,205);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:18.1px;color:rgb(191,200,205);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:35.1px;color:rgb(12,45,72);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:35.1px;color:rgb(12,45,72);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:18.1px;color:rgb(12,45,72);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:18.1px;color:rgb(12,45,72);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:14.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:14.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:18.1px;color:rgb(12,45,72);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:18.1px;color:rgb(12,45,72);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Arial,serif;font-size:40.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Arial,serif;font-size:40.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:24.1px;color:rgb(12,45,72);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:24.1px;color:rgb(12,45,72);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:18.1px;color:rgb(12,45,72);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:18.1px;color:rgb(12,45,72);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Arial,serif;font-size:16.1px;color:rgb(12,45,72);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Arial,serif;font-size:16.1px;color:rgb(12,45,72);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:18.1px;color:rgb(64,170,165);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:18.1px;color:rgb(64,170,165);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:14.1px;color:rgb(64,170,165);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:14.1px;color:rgb(64,170,165);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:14.1px;color:rgb(19,92,160);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:14.1px;color:rgb(19,92,160);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:14.1px;color:rgb(46,139,191);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:14.1px;color:rgb(46,139,191);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Arial,serif;font-size:14.1px;color:rgb(191,200,205);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Arial,serif;font-size:14.1px;color:rgb(191,200,205);font-weight:bold;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background01.jpg" width=595 height=842></div>
+<div style="position:absolute;left:239.39px;top:716.01px" class="cls_002"><span class="cls_002">DukesInDemand Consulting Services, inc</span></div>
+<div style="position:absolute;left:463.78px;top:740.78px" class="cls_002"><span class="cls_002">Load Dock 411</span></div>
+<div style="position:absolute;left:290.07px;top:765.55px" class="cls_002"><span class="cls_002">Analysis and User Research Report</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:852px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background02.jpg" width=595 height=842></div>
+<div style="position:absolute;left:35.28px;top:67.53px" class="cls_004"><span class="cls_004">TABLE OF CONTENTS</span></div>
+<div style="position:absolute;left:35.28px;top:249.07px" class="cls_003"><span class="cls_003">Requirements Analysis</span></div>
+<div style="position:absolute;left:514.27px;top:249.07px" class="cls_003"><span class="cls_003">4 - 6</span></div>
+<div style="position:absolute;left:35.28px;top:278.35px" class="cls_003"><span class="cls_003">Research and Inspiration</span></div>
+<div style="position:absolute;left:502.39px;top:278.35px" class="cls_003"><span class="cls_003">7 - 13</span></div>
+<div style="position:absolute;left:35.28px;top:307.62px" class="cls_003"><span class="cls_003">Target Audiences and Personas</span></div>
+<div style="position:absolute;left:491.71px;top:307.62px" class="cls_003"><span class="cls_003">14 - 17</span></div>
+<div style="position:absolute;left:35.28px;top:336.90px" class="cls_003"><span class="cls_003">Visual Design Concepts</span></div>
+<div style="position:absolute;left:492.14px;top:336.90px" class="cls_003"><span class="cls_003">18 - 20</span></div>
+<div style="position:absolute;left:35.28px;top:366.17px" class="cls_003"><span class="cls_003">Site Map</span></div>
+<div style="position:absolute;left:536.48px;top:366.17px" class="cls_003"><span class="cls_003">21</span></div>
+<div style="position:absolute;left:35.28px;top:395.45px" class="cls_003"><span class="cls_003">Content Audit</span></div>
+<div style="position:absolute;left:536.43px;top:395.45px" class="cls_003"><span class="cls_003">22</span></div>
+<div style="position:absolute;left:35.28px;top:424.72px" class="cls_003"><span class="cls_003">Wireframes</span></div>
+<div style="position:absolute;left:537.01px;top:424.72px" class="cls_003"><span class="cls_003">23</span></div>
+<div style="position:absolute;left:35.28px;top:454.00px" class="cls_003"><span class="cls_003">Mockups</span></div>
+<div style="position:absolute;left:533.94px;top:454.00px" class="cls_003"><span class="cls_003">24</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1704px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background03.jpg" width=595 height=842></div>
+<div style="position:absolute;left:59.58px;top:46.81px" class="cls_005"><span class="cls_005">CLIENT GOALS</span></div>
+<div style="position:absolute;left:54.41px;top:172.77px" class="cls_006"><span class="cls_006">System needs to allow drivers to rate shippers and receivers</span></div>
+<div style="position:absolute;left:54.41px;top:202.79px" class="cls_006"><span class="cls_006">based on their personal experience.</span></div>
+<div style="position:absolute;left:54.41px;top:232.82px" class="cls_006"><span class="cls_006">System must have a keyword filter to flag and take down any</span></div>
+<div style="position:absolute;left:54.41px;top:262.84px" class="cls_006"><span class="cls_006">inappropriate posts or reviews.</span></div>
+<div style="position:absolute;left:54.41px;top:292.87px" class="cls_006"><span class="cls_006">System needs to allow users to view their past trips and require</span></div>
+<div style="position:absolute;left:54.41px;top:322.90px" class="cls_006"><span class="cls_006">users to rate a trip in an allotted amount of time.</span></div>
+<div style="position:absolute;left:54.41px;top:352.92px" class="cls_006"><span class="cls_006">System needs to be versatile to be adapted and used by other</span></div>
+<div style="position:absolute;left:54.41px;top:382.95px" class="cls_006"><span class="cls_006">trucking companies.</span></div>
+<div style="position:absolute;left:228.33px;top:488.21px" class="cls_005"><span class="cls_005">DESIGN QUESTIONS</span></div>
+<div style="position:absolute;left:57.01px;top:611.86px" class="cls_007"><span class="cls_007">How might we design a website that</span><span class="cls_008"> improves the</span></div>
+<div style="position:absolute;left:57.01px;top:645.64px" class="cls_008"><span class="cls_008">efficiency</span><span class="cls_007"> of drivers’ </span><span class="cls_008">experiences with shippers and</span></div>
+<div style="position:absolute;left:57.01px;top:679.42px" class="cls_008"><span class="cls_008">receivers?</span></div>
+<div style="position:absolute;left:366.13px;top:811.21px" class="cls_009"><span class="cls_009">Requirements Analysis | Page 4</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2556px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background04.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.81px;top:21.69px" class="cls_005"><span class="cls_005">RESEARCH QUESTIONS</span></div>
+<div style="position:absolute;left:41.41px;top:142.86px" class="cls_006"><span class="cls_006">1. How often do you use your smartphone/tablet outside of work?</span></div>
+<div style="position:absolute;left:41.41px;top:178.14px" class="cls_006"><span class="cls_006">2. What are your favorite apps/ websites?</span></div>
+<div style="position:absolute;left:64.82px;top:213.42px" class="cls_006"><span class="cls_006">a.  What features do you like about them?</span></div>
+<div style="position:absolute;left:41.41px;top:248.70px" class="cls_006"><span class="cls_006">3. What are you currently doing to find information about shippers</span></div>
+<div style="position:absolute;left:58.22px;top:283.98px" class="cls_006"><span class="cls_006">and receivers?</span></div>
+<div style="position:absolute;left:64.82px;top:319.26px" class="cls_006"><span class="cls_006">a. Tell me about the last time you tried to find out information</span></div>
+<div style="position:absolute;left:81.64px;top:354.54px" class="cls_006"><span class="cls_006">about a shipper/receiver.</span></div>
+<div style="position:absolute;left:41.41px;top:389.82px" class="cls_006"><span class="cls_006">4. What is your biggest pain point regarding shippers and</span></div>
+<div style="position:absolute;left:58.22px;top:425.10px" class="cls_006"><span class="cls_006">receivers?</span></div>
+<div style="position:absolute;left:64.82px;top:460.38px" class="cls_006"><span class="cls_006">a. What is your biggest pain point regarding load/unload</span></div>
+<div style="position:absolute;left:81.64px;top:495.66px" class="cls_006"><span class="cls_006">times?</span></div>
+<div style="position:absolute;left:41.41px;top:530.94px" class="cls_006"><span class="cls_006">5. Have you ever used any other websites/mobile applications to</span></div>
+<div style="position:absolute;left:58.22px;top:566.22px" class="cls_006"><span class="cls_006">find information about shippers or receivers?</span></div>
+<div style="position:absolute;left:64.82px;top:601.50px" class="cls_006"><span class="cls_006">a. How did you find these websites/apps?</span></div>
+<div style="position:absolute;left:64.82px;top:636.78px" class="cls_006"><span class="cls_006">b. What is effective about these websites/apps?</span></div>
+<div style="position:absolute;left:41.41px;top:672.05px" class="cls_006"><span class="cls_006">6.  What features would you like to see included in this product?</span></div>
+<div style="position:absolute;left:381.62px;top:811.21px" class="cls_009"><span class="cls_009">Requirements Analysis | Page 5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:3408px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background05.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.81px;top:21.69px" class="cls_005"><span class="cls_005">Hypothesis</span></div>
+<div style="position:absolute;left:58.22px;top:127.10px" class="cls_002"><span class="cls_002">What do you already know about your target audience?</span></div>
+<div style="position:absolute;left:81.64px;top:162.38px" class="cls_006"><span class="cls_006">Our users are a variety of ages, travel often, and have</span></div>
+<div style="position:absolute;left:81.64px;top:197.66px" class="cls_006"><span class="cls_006">varying levels of technology usage.</span></div>
+<div style="position:absolute;left:58.22px;top:232.94px" class="cls_002"><span class="cls_002">Are you making any assumptions of the user audience</span></div>
+<div style="position:absolute;left:58.22px;top:268.22px" class="cls_002"><span class="cls_002">that you plan to prove or disprove through user research?</span></div>
+<div style="position:absolute;left:81.64px;top:303.50px" class="cls_006"><span class="cls_006">We assume the users are eager to share their experience</span></div>
+<div style="position:absolute;left:81.64px;top:338.78px" class="cls_006"><span class="cls_006">at each shipper and receiver to make the most of their</span></div>
+<div style="position:absolute;left:81.64px;top:374.06px" class="cls_006"><span class="cls_006">working hours in the future.</span></div>
+<div style="position:absolute;left:81.64px;top:409.33px" class="cls_006"><span class="cls_006">We assume the users have a basic understanding of</span></div>
+<div style="position:absolute;left:81.64px;top:444.61px" class="cls_006"><span class="cls_006">technology, but not high.</span></div>
+<div style="position:absolute;left:81.64px;top:479.89px" class="cls_006"><span class="cls_006">We assume the users know each other well enough to want</span></div>
+<div style="position:absolute;left:81.64px;top:515.17px" class="cls_006"><span class="cls_006">to leave reviews that are beneficial to others.</span></div>
+<div style="position:absolute;left:81.64px;top:550.45px" class="cls_006"><span class="cls_006">We assume users will want a simple and user friendly</span></div>
+<div style="position:absolute;left:81.64px;top:585.73px" class="cls_006"><span class="cls_006">design that is easy to navigate and operate.</span></div>
+<div style="position:absolute;left:58.22px;top:621.01px" class="cls_002"><span class="cls_002">Do you have any expectations at the start that may be</span></div>
+<div style="position:absolute;left:58.22px;top:656.29px" class="cls_002"><span class="cls_002">proven or disproven through research?</span></div>
+<div style="position:absolute;left:81.64px;top:691.57px" class="cls_006"><span class="cls_006">We expect the users experiences at shippers and receivers</span></div>
+<div style="position:absolute;left:81.64px;top:726.85px" class="cls_006"><span class="cls_006">to be relatively similar to one another across the country.</span></div>
+<div style="position:absolute;left:381.42px;top:811.21px" class="cls_009"><span class="cls_009">Requirements Analysis | Page 6</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:4260px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background06.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.81px;top:21.69px" class="cls_005"><span class="cls_005">USER RESEARCH</span></div>
+<div style="position:absolute;left:68.24px;top:119.00px" class="cls_010"><span class="cls_010">Our user research strategy for Load Dock 411 primarily consisted of</span></div>
+<div style="position:absolute;left:34.81px;top:149.77px" class="cls_010"><span class="cls_010">information sessions and competitive research. To begin, we interviewed</span></div>
+<div style="position:absolute;left:34.81px;top:180.55px" class="cls_010"><span class="cls_010">our client to ask questions about what they were looking for in the design</span></div>
+<div style="position:absolute;left:34.81px;top:211.32px" class="cls_010"><span class="cls_010">and information about the users we were designing for. Essential basic</span></div>
+<div style="position:absolute;left:34.81px;top:242.10px" class="cls_010"><span class="cls_010">information was given on the company and their values, background</span></div>
+<div style="position:absolute;left:34.81px;top:272.88px" class="cls_010"><span class="cls_010">information on user demographics, and the client goals. After this, we</span></div>
+<div style="position:absolute;left:34.81px;top:303.65px" class="cls_010"><span class="cls_010">were   able   to   assemble   with   our   fellow   teammates   to   discuss</span></div>
+<div style="position:absolute;left:34.81px;top:334.43px" class="cls_010"><span class="cls_010">the various components of our system. Afterwards we compiled the</span></div>
+<div style="position:absolute;left:34.81px;top:365.20px" class="cls_010"><span class="cls_010">information  and  research  we  had  received  and  began  working  on</span></div>
+<div style="position:absolute;left:34.81px;top:395.98px" class="cls_010"><span class="cls_010">constructing the system our client had described.</span></div>
+<div style="position:absolute;left:68.24px;top:426.75px" class="cls_010"><span class="cls_010">We began to research design inspiration and our competition to see</span></div>
+<div style="position:absolute;left:34.81px;top:457.53px" class="cls_010"><span class="cls_010">where the market currently stood. Right away we found a few applications</span></div>
+<div style="position:absolute;left:34.81px;top:488.31px" class="cls_010"><span class="cls_010">and websites that had similar functions and features that we were hoping</span></div>
+<div style="position:absolute;left:34.81px;top:519.08px" class="cls_010"><span class="cls_010">to include in our design. We were intrigued with Trucker Path, Dock411,</span></div>
+<div style="position:absolute;left:34.81px;top:549.86px" class="cls_010"><span class="cls_010">Uber Freight, Jitterbug Smart2, and Granpad. There are elements from</span></div>
+<div style="position:absolute;left:34.81px;top:580.63px" class="cls_010"><span class="cls_010">each that we were inspired by but they all had the same overall sleek and</span></div>
+<div style="position:absolute;left:34.81px;top:611.41px" class="cls_010"><span class="cls_010">simple interface that our users would be able to easily navigate. This is</span></div>
+<div style="position:absolute;left:34.81px;top:642.19px" class="cls_010"><span class="cls_010">extremely important to our design because our primary users are older</span></div>
+<div style="position:absolute;left:34.81px;top:672.96px" class="cls_010"><span class="cls_010">and not technology savvy.</span></div>
+<div style="position:absolute;left:78.00px;top:703.74px" class="cls_010"><span class="cls_010">Because we want to design an app our users love, we began to</span></div>
+<div style="position:absolute;left:34.81px;top:734.51px" class="cls_010"><span class="cls_010">research design that is user friendly for the elderly. </span><span class="cls_011">(continued on next</span></div>
+<div style="position:absolute;left:34.81px;top:765.29px" class="cls_011"><span class="cls_011">page)</span></div>
+<div style="position:absolute;left:382.09px;top:811.21px" class="cls_009"><span class="cls_009">Requirements Analysis | Page 7</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5112px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background07.jpg" width=595 height=842></div>
+<div style="position:absolute;left:34.81px;top:21.69px" class="cls_005"><span class="cls_005">USER RESEARCH</span></div>
+<div style="position:absolute;left:39.25px;top:124.25px" class="cls_010"><span class="cls_010">We chose large bolded sans serifs that are easy to read, made the main</span></div>
+<div style="position:absolute;left:34.81px;top:155.03px" class="cls_010"><span class="cls_010">navigation in a single, linear menu, and kept the colors simple and not</span></div>
+<div style="position:absolute;left:34.81px;top:185.80px" class="cls_010"><span class="cls_010">too overwhelming. This was inspired by Jitterbug Smart2 and Granpad.</span></div>
+<div style="position:absolute;left:34.81px;top:216.58px" class="cls_010"><span class="cls_010">Both applications use larger buttons and have the navigation right there</span></div>
+<div style="position:absolute;left:34.81px;top:247.35px" class="cls_010"><span class="cls_010">for the user to find so they do not become lost in the pages. The fonts are</span></div>
+<div style="position:absolute;left:34.81px;top:278.13px" class="cls_010"><span class="cls_010">large and simple to read, especially on a smart phone or tablet.</span></div>
+<div style="position:absolute;left:61.49px;top:308.91px" class="cls_010"><span class="cls_010">When it came to competitors, one example is Uber Freight. They</span></div>
+<div style="position:absolute;left:34.81px;top:339.68px" class="cls_010"><span class="cls_010">created a rating feature that allows drivers to rate facilities on a scale of 1</span></div>
+<div style="position:absolute;left:34.81px;top:370.46px" class="cls_010"><span class="cls_010">to 5, with the option to leave a written review. It also includes the option to</span></div>
+<div style="position:absolute;left:34.81px;top:401.23px" class="cls_010"><span class="cls_010">confirm if there is a restroom, onsite scale, food, or rest areas close. We</span></div>
+<div style="position:absolute;left:34.81px;top:432.01px" class="cls_010"><span class="cls_010">think this is a great idea to incorporate into our system as some carriers</span></div>
+<div style="position:absolute;left:34.81px;top:462.78px" class="cls_010"><span class="cls_010">may not include features that a driver would want to know about before</span></div>
+<div style="position:absolute;left:34.81px;top:493.56px" class="cls_010"><span class="cls_010">hand.</span></div>
+<div style="position:absolute;left:61.49px;top:524.34px" class="cls_010"><span class="cls_010">After compiling all of our research from our client, the takeaways from</span></div>
+<div style="position:absolute;left:34.81px;top:555.11px" class="cls_010"><span class="cls_010">our inspiration and competition, and outside research we were able</span></div>
+<div style="position:absolute;left:34.81px;top:585.89px" class="cls_010"><span class="cls_010">to compile a list of our design requirements. There are five main parts to</span></div>
+<div style="position:absolute;left:34.81px;top:616.66px" class="cls_010"><span class="cls_010">the system: a login page, a user home page, a search page, a page to</span></div>
+<div style="position:absolute;left:34.81px;top:647.44px" class="cls_010"><span class="cls_010">rate a shipper or receiver, and a product page. Each of these pages will</span></div>
+<div style="position:absolute;left:34.81px;top:678.22px" class="cls_010"><span class="cls_010">have specific features to ensure that they fit the client’s goals and the</span></div>
+<div style="position:absolute;left:34.81px;top:708.99px" class="cls_010"><span class="cls_010">user’s needs to the best of our team’s ability.</span></div>
+<div style="position:absolute;left:381.30px;top:811.21px" class="cls_009"><span class="cls_009">Requirements Analysis | Page 8</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5964px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background08.jpg" width=595 height=842></div>
+<div style="position:absolute;left:21.29px;top:55.82px" class="cls_012"><span class="cls_012">DESIGN REQUIREMENTS</span></div>
+<div style="position:absolute;left:82.99px;top:199.10px" class="cls_013"><span class="cls_013">A </span><span class="cls_014">user home page</span><span class="cls_015"> </span><span class="cls_013">where drivers can review</span></div>
+<div style="position:absolute;left:82.99px;top:234.15px" class="cls_013"><span class="cls_013">shippers/receivers on load time, their experience, and</span></div>
+<div style="position:absolute;left:82.99px;top:269.21px" class="cls_013"><span class="cls_013">what amenities are nearby.</span></div>
+<div style="position:absolute;left:82.99px;top:304.26px" class="cls_013"><span class="cls_013">A </span><span class="cls_014">search page</span><span class="cls_013"> where users can search and create dock</span></div>
+<div style="position:absolute;left:82.99px;top:339.32px" class="cls_013"><span class="cls_013">locations.</span></div>
+<div style="position:absolute;left:82.99px;top:374.37px" class="cls_013"><span class="cls_013">A </span><span class="cls_014">login page</span><span class="cls_013"> for users to enter the website with their</span></div>
+<div style="position:absolute;left:82.99px;top:409.42px" class="cls_013"><span class="cls_013">specific username to access all of the information the site</span></div>
+<div style="position:absolute;left:82.99px;top:444.48px" class="cls_013"><span class="cls_013">has to offer or create an account.</span></div>
+<div style="position:absolute;left:82.99px;top:479.53px" class="cls_013"><span class="cls_013">A </span><span class="cls_014">product page</span><span class="cls_013"> for truck company managers</span></div>
+<div style="position:absolute;left:82.99px;top:514.58px" class="cls_013"><span class="cls_013">considering using the product to see what it is.</span></div>
+<div style="position:absolute;left:381.44px;top:811.21px" class="cls_009"><span class="cls_009">Requirements Analysis | Page 9</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:6816px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background09.jpg" width=595 height=842></div>
+<div style="position:absolute;left:59.58px;top:55.82px" class="cls_016"><span class="cls_016">MOOD BOARD</span></div>
+<div style="position:absolute;left:352.57px;top:812.82px" class="cls_009"><span class="cls_009">Research and Inspiration | Page 10</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:7668px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background10.jpg" width=595 height=842></div>
+<div style="position:absolute;left:59.58px;top:78.44px" class="cls_016"><span class="cls_016">DESIGN INSPIRATION</span></div>
+<div style="position:absolute;left:288.13px;top:189.28px" class="cls_018"><span class="cls_018">We were inspired by the color</span></div>
+<div style="position:absolute;left:288.13px;top:214.05px" class="cls_018"><span class="cls_018">palette used by Trucker Path.</span></div>
+<div style="position:absolute;left:288.13px;top:238.82px" class="cls_018"><span class="cls_018">The varying shades of blue</span></div>
+<div style="position:absolute;left:288.13px;top:263.59px" class="cls_018"><span class="cls_018">combined with a light gray and</span></div>
+<div style="position:absolute;left:288.13px;top:288.36px" class="cls_018"><span class="cls_018">white provided a nice contrast</span></div>
+<div style="position:absolute;left:288.13px;top:313.13px" class="cls_018"><span class="cls_018">without overwhelming the user.</span></div>
+<div style="position:absolute;left:288.13px;top:337.90px" class="cls_018"><span class="cls_018">We also added in the color</span></div>
+<div style="position:absolute;left:288.13px;top:362.68px" class="cls_018"><span class="cls_018">Keppel to provide separation</span></div>
+<div style="position:absolute;left:288.13px;top:387.45px" class="cls_018"><span class="cls_018">from the blue shades.</span></div>
+<div style="position:absolute;left:288.13px;top:485.11px" class="cls_018"><span class="cls_018">The way Jitterbug Smart2</span></div>
+<div style="position:absolute;left:288.13px;top:509.88px" class="cls_018"><span class="cls_018">uses a large font size and a</span></div>
+<div style="position:absolute;left:288.13px;top:534.65px" class="cls_018"><span class="cls_018">simple navigation inspired us</span></div>
+<div style="position:absolute;left:288.13px;top:559.42px" class="cls_018"><span class="cls_018">to create a straightforward</span></div>
+<div style="position:absolute;left:288.13px;top:584.19px" class="cls_018"><span class="cls_018">interface with text large</span></div>
+<div style="position:absolute;left:288.13px;top:608.96px" class="cls_018"><span class="cls_018">enough for our target audience</span></div>
+<div style="position:absolute;left:288.13px;top:633.73px" class="cls_018"><span class="cls_018">to be able to read on their</span></div>
+<div style="position:absolute;left:288.13px;top:658.50px" class="cls_018"><span class="cls_018">devices.</span></div>
+<div style="position:absolute;left:358.07px;top:809.91px" class="cls_017"><span class="cls_017">Research and Inspiration | Page 11</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:8520px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background11.jpg" width=595 height=842></div>
+<div style="position:absolute;left:59.58px;top:78.44px" class="cls_016"><span class="cls_016">DESIGN INSPIRATION</span></div>
+<div style="position:absolute;left:294.79px;top:225.56px" class="cls_018"><span class="cls_018">GrandPad utilizes large</span></div>
+<div style="position:absolute;left:294.79px;top:250.33px" class="cls_018"><span class="cls_018">buttons for users to be able to</span></div>
+<div style="position:absolute;left:294.79px;top:275.10px" class="cls_018"><span class="cls_018">click on with ease. It is simple</span></div>
+<div style="position:absolute;left:294.79px;top:299.87px" class="cls_018"><span class="cls_018">and makes for quick</span></div>
+<div style="position:absolute;left:294.79px;top:324.64px" class="cls_018"><span class="cls_018">comprehension so the user</span></div>
+<div style="position:absolute;left:294.79px;top:349.41px" class="cls_018"><span class="cls_018">does not need to spend time</span></div>
+<div style="position:absolute;left:294.79px;top:374.19px" class="cls_018"><span class="cls_018">figuring out where to go next.</span></div>
+<div style="position:absolute;left:294.79px;top:487.24px" class="cls_018"><span class="cls_018">We enjoy the three tabs of</span></div>
+<div style="position:absolute;left:294.79px;top:512.02px" class="cls_018"><span class="cls_018">navigation that a user can</span></div>
+<div style="position:absolute;left:294.79px;top:536.79px" class="cls_018"><span class="cls_018">easily click back and forth</span></div>
+<div style="position:absolute;left:294.79px;top:561.56px" class="cls_018"><span class="cls_018">between the three main</span></div>
+<div style="position:absolute;left:294.79px;top:586.33px" class="cls_018"><span class="cls_018">pages. We believe moving the</span></div>
+<div style="position:absolute;left:294.79px;top:611.10px" class="cls_018"><span class="cls_018">navigation bar to the bottom is</span></div>
+<div style="position:absolute;left:294.79px;top:635.87px" class="cls_018"><span class="cls_018">more effective and user</span></div>
+<div style="position:absolute;left:294.79px;top:660.64px" class="cls_018"><span class="cls_018">friendly for our audience.</span></div>
+<div style="position:absolute;left:360.73px;top:809.91px" class="cls_017"><span class="cls_017">Research and Inspiration | Page 12</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:9372px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background12.jpg" width=595 height=842></div>
+<div style="position:absolute;left:59.58px;top:78.44px" class="cls_016"><span class="cls_016">COMPETITION</span></div>
+<div style="position:absolute;left:298.64px;top:190.10px" class="cls_019"><span class="cls_019">Our main competition site is</span></div>
+<div style="position:absolute;left:298.64px;top:215.10px" class="cls_019"><span class="cls_019">Uber Freight. They have a</span></div>
+<div style="position:absolute;left:298.64px;top:240.10px" class="cls_019"><span class="cls_019">very sleek and simplistic</span></div>
+<div style="position:absolute;left:298.64px;top:265.09px" class="cls_019"><span class="cls_019">design that our target</span></div>
+<div style="position:absolute;left:298.64px;top:290.09px" class="cls_019"><span class="cls_019">audience likes. Their website</span></div>
+<div style="position:absolute;left:298.64px;top:315.09px" class="cls_019"><span class="cls_019">has elements that we do not</span></div>
+<div style="position:absolute;left:298.64px;top:340.08px" class="cls_019"><span class="cls_019">consider necessary for client</span></div>
+<div style="position:absolute;left:298.64px;top:365.08px" class="cls_019"><span class="cls_019">such as job oportunities and</span></div>
+<div style="position:absolute;left:298.64px;top:390.07px" class="cls_019"><span class="cls_019">messaging.</span></div>
+<div style="position:absolute;left:297.89px;top:457.43px" class="cls_019"><span class="cls_019">Dock 411 is another</span></div>
+<div style="position:absolute;left:297.89px;top:482.42px" class="cls_019"><span class="cls_019">competition site that has a</span></div>
+<div style="position:absolute;left:297.89px;top:507.42px" class="cls_019"><span class="cls_019">straightforward design. We</span></div>
+<div style="position:absolute;left:297.89px;top:532.42px" class="cls_019"><span class="cls_019">liked how they put the wait</span></div>
+<div style="position:absolute;left:297.89px;top:557.41px" class="cls_019"><span class="cls_019">time, load time, and unload</span></div>
+<div style="position:absolute;left:297.89px;top:582.41px" class="cls_019"><span class="cls_019">time in the information on the</span></div>
+<div style="position:absolute;left:297.89px;top:607.41px" class="cls_019"><span class="cls_019">carrier. This is very similar to</span></div>
+<div style="position:absolute;left:297.89px;top:632.40px" class="cls_019"><span class="cls_019">what we are striving for on</span></div>
+<div style="position:absolute;left:297.89px;top:657.40px" class="cls_019"><span class="cls_019">our page.</span></div>
+<div style="position:absolute;left:354.66px;top:809.91px" class="cls_017"><span class="cls_017">Research and Inspiration | Page 13</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:10224px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background13.jpg" width=595 height=842></div>
+<div style="position:absolute;left:232.84px;top:18.31px" class="cls_020"><span class="cls_020">Michael Anderson</span></div>
+<div style="position:absolute;left:246.45px;top:76.71px" class="cls_021"><span class="cls_021">introvert | grandfather | hard working</span></div>
+<div style="position:absolute;left:267.74px;top:101.94px" class="cls_021"><span class="cls_021">Location: Front Royal, Virginia</span></div>
+<div style="position:absolute;left:239.12px;top:146.83px" class="cls_022"><span class="cls_022">"I work hard to give my grandchildren</span></div>
+<div style="position:absolute;left:294.42px;top:171.60px" class="cls_022"><span class="cls_022">a better future and life."</span></div>
+<div style="position:absolute;left:8.57px;top:242.42px" class="cls_023"><span class="cls_023">About Michael:</span></div>
+<div style="position:absolute;left:279.35px;top:242.42px" class="cls_023"><span class="cls_023">Technology Use:</span></div>
+<div style="position:absolute;left:26.37px;top:277.15px" class="cls_024"><span class="cls_024">Persona: </span><span class="cls_018">Primary, 58%</span></div>
+<div style="position:absolute;left:26.37px;top:301.92px" class="cls_024"><span class="cls_024">Age:</span><span class="cls_018"> 62</span></div>
+<div style="position:absolute;left:26.37px;top:326.69px" class="cls_024"><span class="cls_024">Occupation: </span><span class="cls_018">Truck Driver</span></div>
+<div style="position:absolute;left:26.37px;top:351.46px" class="cls_024"><span class="cls_024">Family:</span><span class="cls_018"> Married, father of</span></div>
+<div style="position:absolute;left:26.37px;top:376.23px" class="cls_018"><span class="cls_018">two, grandfather of one</span></div>
+<div style="position:absolute;left:26.37px;top:401.00px" class="cls_024"><span class="cls_024">Education:</span><span class="cls_018"> GED</span></div>
+<div style="position:absolute;left:8.57px;top:426.32px" class="cls_023"><span class="cls_023">Bio:</span></div>
+<div style="position:absolute;left:24.44px;top:465.97px" class="cls_018"><span class="cls_018">Michael works as a truck</span></div>
+<div style="position:absolute;left:24.44px;top:490.74px" class="cls_018"><span class="cls_018">driver for a small cargo and</span></div>
+<div style="position:absolute;left:24.44px;top:515.51px" class="cls_018"><span class="cls_018">freight company in Virginia.</span></div>
+<div style="position:absolute;left:24.44px;top:540.28px" class="cls_018"><span class="cls_018">He spends most of his week</span></div>
+<div style="position:absolute;left:279.35px;top:543.14px" class="cls_023"><span class="cls_023">Goals:</span></div>
+<div style="position:absolute;left:24.44px;top:565.05px" class="cls_018"><span class="cls_018">driving to shippers and</span></div>
+<div style="position:absolute;left:24.44px;top:589.82px" class="cls_018"><span class="cls_018">receivers along the east</span></div>
+<div style="position:absolute;left:318.20px;top:587.83px" class="cls_018"><span class="cls_018">Michael wants an application</span></div>
+<div style="position:absolute;left:24.44px;top:614.60px" class="cls_018"><span class="cls_018">coast and into the mid west.</span></div>
+<div style="position:absolute;left:318.20px;top:612.60px" class="cls_018"><span class="cls_018">that allows trusted employees to</span></div>
+<div style="position:absolute;left:24.44px;top:639.37px" class="cls_018"><span class="cls_018">Michael is close with many of</span></div>
+<div style="position:absolute;left:318.20px;top:637.37px" class="cls_018"><span class="cls_018">rate and review load times at</span></div>
+<div style="position:absolute;left:24.44px;top:664.14px" class="cls_018"><span class="cls_018">his co-workers as they have</span></div>
+<div style="position:absolute;left:318.20px;top:662.14px" class="cls_018"><span class="cls_018">shippers so he can make the</span></div>
+<div style="position:absolute;left:24.44px;top:688.91px" class="cls_018"><span class="cls_018">been working together in the</span></div>
+<div style="position:absolute;left:318.20px;top:686.91px" class="cls_018"><span class="cls_018">most of his hours on the clock.</span></div>
+<div style="position:absolute;left:24.44px;top:713.68px" class="cls_018"><span class="cls_018">industry for many years. He</span></div>
+<div style="position:absolute;left:318.20px;top:711.68px" class="cls_018"><span class="cls_018">Michael wants an application</span></div>
+<div style="position:absolute;left:24.44px;top:738.45px" class="cls_018"><span class="cls_018">has found stability working</span></div>
+<div style="position:absolute;left:318.20px;top:736.45px" class="cls_018"><span class="cls_018">that is user friendly and easy for</span></div>
+<div style="position:absolute;left:24.44px;top:763.22px" class="cls_018"><span class="cls_018">with the same company for</span></div>
+<div style="position:absolute;left:318.20px;top:761.22px" class="cls_018"><span class="cls_018">him to use.</span></div>
+<div style="position:absolute;left:24.44px;top:787.99px" class="cls_018"><span class="cls_018">the last 23 years.</span></div>
+<div style="position:absolute;left:311.23px;top:811.41px" class="cls_009"><span class="cls_009">Target Audiences and Personas | Page 14</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11076px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background14.jpg" width=595 height=842></div>
+<div style="position:absolute;left:272.03px;top:18.31px" class="cls_020"><span class="cls_020">Tina Emerson</span></div>
+<div style="position:absolute;left:267.99px;top:70.71px" class="cls_021"><span class="cls_021">extrovert | traveler | passionate</span></div>
+<div style="position:absolute;left:269.24px;top:101.94px" class="cls_021"><span class="cls_021">Location: Baltimore, Maryland</span></div>
+<div style="position:absolute;left:258.27px;top:146.83px" class="cls_022"><span class="cls_022">"I love long road trips and seeing</span></div>
+<div style="position:absolute;left:286.11px;top:171.60px" class="cls_022"><span class="cls_022">different parts of the U.S."</span></div>
+<div style="position:absolute;left:8.57px;top:242.42px" class="cls_023"><span class="cls_023">About Tina:</span></div>
+<div style="position:absolute;left:279.35px;top:242.42px" class="cls_023"><span class="cls_023">Technology Use:</span></div>
+<div style="position:absolute;left:22.83px;top:280.90px" class="cls_024"><span class="cls_024">Persona: </span><span class="cls_018">Secondary, 33%</span></div>
+<div style="position:absolute;left:22.83px;top:305.67px" class="cls_024"><span class="cls_024">Age:</span><span class="cls_018"> 41</span></div>
+<div style="position:absolute;left:22.83px;top:330.44px" class="cls_024"><span class="cls_024">Occupation: </span><span class="cls_018">Truck Driver</span></div>
+<div style="position:absolute;left:22.83px;top:355.21px" class="cls_024"><span class="cls_024">Family:</span><span class="cls_018"> Single, aunt of four</span></div>
+<div style="position:absolute;left:22.83px;top:379.98px" class="cls_024"><span class="cls_024">Education:</span><span class="cls_018"> Assosiates</span></div>
+<div style="position:absolute;left:22.83px;top:404.76px" class="cls_018"><span class="cls_018">Degree</span></div>
+<div style="position:absolute;left:8.57px;top:436.82px" class="cls_023"><span class="cls_023">Bio:</span></div>
+<div style="position:absolute;left:22.83px;top:484.93px" class="cls_018"><span class="cls_018">Tina works as an</span></div>
+<div style="position:absolute;left:22.83px;top:509.70px" class="cls_018"><span class="cls_018">independent driver and picks</span></div>
+<div style="position:absolute;left:22.83px;top:534.47px" class="cls_018"><span class="cls_018">up loads when she wants to</span></div>
+<div style="position:absolute;left:279.35px;top:537.13px" class="cls_023"><span class="cls_023">Goals:</span></div>
+<div style="position:absolute;left:22.83px;top:559.24px" class="cls_018"><span class="cls_018">earn some extra cash or just</span></div>
+<div style="position:absolute;left:318.20px;top:578.79px" class="cls_018"><span class="cls_018">Tina wants to be able to share</span></div>
+<div style="position:absolute;left:22.83px;top:584.01px" class="cls_018"><span class="cls_018">wants to travel. She also</span></div>
+<div style="position:absolute;left:318.20px;top:603.56px" class="cls_018"><span class="cls_018">her experience at a shipper and</span></div>
+<div style="position:absolute;left:22.83px;top:608.78px" class="cls_018"><span class="cls_018">works as a waitress at a local</span></div>
+<div style="position:absolute;left:318.20px;top:628.33px" class="cls_018"><span class="cls_018">receiver and let others know</span></div>
+<div style="position:absolute;left:22.83px;top:633.55px" class="cls_018"><span class="cls_018">restaurant on the weekends.</span></div>
+<div style="position:absolute;left:318.20px;top:653.10px" class="cls_018"><span class="cls_018">where she visited locally in the</span></div>
+<div style="position:absolute;left:22.83px;top:658.33px" class="cls_018"><span class="cls_018">Tina loves to travel around to</span></div>
+<div style="position:absolute;left:318.20px;top:677.87px" class="cls_018"><span class="cls_018">comments.</span></div>
+<div style="position:absolute;left:22.83px;top:683.10px" class="cls_018"><span class="cls_018">different parts of the country</span></div>
+<div style="position:absolute;left:318.20px;top:702.64px" class="cls_018"><span class="cls_018">Tina wants to be able to feel</span></div>
+<div style="position:absolute;left:22.83px;top:707.87px" class="cls_018"><span class="cls_018">and is always asking other</span></div>
+<div style="position:absolute;left:318.20px;top:727.41px" class="cls_018"><span class="cls_018">connected to the community of</span></div>
+<div style="position:absolute;left:22.83px;top:732.64px" class="cls_018"><span class="cls_018">drivers for attractions or</span></div>
+<div style="position:absolute;left:318.20px;top:752.18px" class="cls_018"><span class="cls_018">truck drivers.</span></div>
+<div style="position:absolute;left:22.83px;top:757.41px" class="cls_018"><span class="cls_018">touristy sites to visit when</span></div>
+<div style="position:absolute;left:22.83px;top:782.18px" class="cls_018"><span class="cls_018">she is off the clock.</span></div>
+<div style="position:absolute;left:311.43px;top:811.41px" class="cls_009"><span class="cls_009">Target Audiences and Personas | Page 15</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11928px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background15.jpg" width=595 height=842></div>
+<div style="position:absolute;left:245.62px;top:21.47px" class="cls_020"><span class="cls_020">Trevor Sampson</span></div>
+<div style="position:absolute;left:288.27px;top:70.71px" class="cls_021"><span class="cls_021">extrovert | loyal | manager</span></div>
+<div style="position:absolute;left:275.75px;top:101.94px" class="cls_021"><span class="cls_021">Location: Charlottesville, VA</span></div>
+<div style="position:absolute;left:238.78px;top:146.83px" class="cls_022"><span class="cls_022">"I love the trucking industry and all of</span></div>
+<div style="position:absolute;left:264.36px;top:171.60px" class="cls_022"><span class="cls_022">the great people involved in it "</span></div>
+<div style="position:absolute;left:8.57px;top:242.42px" class="cls_023"><span class="cls_023">About Trevor:</span></div>
+<div style="position:absolute;left:279.35px;top:242.42px" class="cls_023"><span class="cls_023">Technology Use:</span></div>
+<div style="position:absolute;left:22.83px;top:279.16px" class="cls_024"><span class="cls_024">Persona: </span><span class="cls_018">Tertiary, 9%</span></div>
+<div style="position:absolute;left:22.83px;top:303.93px" class="cls_024"><span class="cls_024">Age:</span><span class="cls_018"> 24</span></div>
+<div style="position:absolute;left:22.83px;top:328.70px" class="cls_024"><span class="cls_024">Occupation: </span><span class="cls_018">Truck</span></div>
+<div style="position:absolute;left:22.83px;top:353.47px" class="cls_018"><span class="cls_018">Company Manager</span></div>
+<div style="position:absolute;left:22.83px;top:378.24px" class="cls_024"><span class="cls_024">Family:</span><span class="cls_018"> Single</span></div>
+<div style="position:absolute;left:22.83px;top:403.01px" class="cls_024"><span class="cls_024">Education:</span><span class="cls_018"> Business</span></div>
+<div style="position:absolute;left:22.83px;top:427.78px" class="cls_018"><span class="cls_018">Degree</span></div>
+<div style="position:absolute;left:8.57px;top:466.85px" class="cls_023"><span class="cls_023">Bio:</span></div>
+<div style="position:absolute;left:22.83px;top:504.45px" class="cls_018"><span class="cls_018">Trevor is a manager at a</span></div>
+<div style="position:absolute;left:22.83px;top:529.22px" class="cls_018"><span class="cls_018">small trucking company. After</span></div>
+<div style="position:absolute;left:279.35px;top:534.88px" class="cls_023"><span class="cls_023">Goals:</span></div>
+<div style="position:absolute;left:22.83px;top:553.99px" class="cls_018"><span class="cls_018">college he was interested in</span></div>
+<div style="position:absolute;left:22.83px;top:578.76px" class="cls_018"><span class="cls_018">the trucking industry because</span></div>
+<div style="position:absolute;left:318.20px;top:579.57px" class="cls_018"><span class="cls_018">Trevor wants to make sure his</span></div>
+<div style="position:absolute;left:22.83px;top:603.53px" class="cls_018"><span class="cls_018">his father was a truck driver</span></div>
+<div style="position:absolute;left:318.20px;top:604.34px" class="cls_018"><span class="cls_018">drivers can see how long a load</span></div>
+<div style="position:absolute;left:22.83px;top:628.30px" class="cls_018"><span class="cls_018">for most of his life. Trevor is</span></div>
+<div style="position:absolute;left:318.20px;top:629.11px" class="cls_018"><span class="cls_018">will take so they can be more</span></div>
+<div style="position:absolute;left:22.83px;top:653.07px" class="cls_018"><span class="cls_018">always looking for ways to</span></div>
+<div style="position:absolute;left:318.20px;top:653.88px" class="cls_018"><span class="cls_018">efficient on planning their trips.</span></div>
+<div style="position:absolute;left:22.83px;top:677.84px" class="cls_018"><span class="cls_018">make the job easier and</span></div>
+<div style="position:absolute;left:318.20px;top:678.65px" class="cls_018"><span class="cls_018">Trevor wants to engage his</span></div>
+<div style="position:absolute;left:22.83px;top:702.61px" class="cls_018"><span class="cls_018">more streamlined. In his free</span></div>
+<div style="position:absolute;left:318.20px;top:703.42px" class="cls_018"><span class="cls_018">drivers in using a system that</span></div>
+<div style="position:absolute;left:22.83px;top:727.38px" class="cls_018"><span class="cls_018">time he likes to visit his family</span></div>
+<div style="position:absolute;left:318.20px;top:728.19px" class="cls_018"><span class="cls_018">helps out one another within the</span></div>
+<div style="position:absolute;left:22.83px;top:752.15px" class="cls_018"><span class="cls_018">and volunteer in his local</span></div>
+<div style="position:absolute;left:318.20px;top:752.96px" class="cls_018"><span class="cls_018">trucking community.</span></div>
+<div style="position:absolute;left:22.83px;top:776.93px" class="cls_018"><span class="cls_018">community.</span></div>
+<div style="position:absolute;left:311.25px;top:811.41px" class="cls_009"><span class="cls_009">Target Audiences and Personas | Page 16</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:12780px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background16.jpg" width=595 height=842></div>
+<div style="position:absolute;left:22.75px;top:24.18px" class="cls_005"><span class="cls_005">USER STORIES</span></div>
+<div style="position:absolute;left:22.75px;top:125.84px" class="cls_025"><span class="cls_025">For our user stories we relied heavily on the information our clients provided</span></div>
+<div style="position:absolute;left:22.75px;top:147.61px" class="cls_025"><span class="cls_025">for us and outside research conducted on our target audience through</span></div>
+<div style="position:absolute;left:22.75px;top:169.38px" class="cls_025"><span class="cls_025">facebook groups. We based our personas on the types of individuals that</span></div>
+<div style="position:absolute;left:22.75px;top:191.14px" class="cls_025"><span class="cls_025">would be using this website.</span></div>
+<div style="position:absolute;left:22.75px;top:234.68px" class="cls_025"><span class="cls_025">Michael Anderson is a public user of the website and would have access to</span></div>
+<div style="position:absolute;left:22.75px;top:256.45px" class="cls_025"><span class="cls_025">everything except for the administrative side. Michael is based off of the</span></div>
+<div style="position:absolute;left:22.75px;top:278.22px" class="cls_025"><span class="cls_025">typical driver our client described to us. Because he would be the primary</span></div>
+<div style="position:absolute;left:22.75px;top:299.99px" class="cls_025"><span class="cls_025">user of our system, it is important his goals are met and included into our</span></div>
+<div style="position:absolute;left:22.75px;top:321.75px" class="cls_025"><span class="cls_025">design.</span></div>
+<div style="position:absolute;left:43.56px;top:343.52px" class="cls_025"><span class="cls_025">As a truck driver, I want to search and find the average wait and load</span></div>
+<div style="position:absolute;left:43.56px;top:365.29px" class="cls_025"><span class="cls_025">time at a location before I go so I can make the most of my hours on the</span></div>
+<div style="position:absolute;left:43.56px;top:387.06px" class="cls_025"><span class="cls_025">clock.</span></div>
+<div style="position:absolute;left:43.56px;top:408.83px" class="cls_025"><span class="cls_025">As someone who rarely uses technology outside of work, I want a simple</span></div>
+<div style="position:absolute;left:43.56px;top:430.60px" class="cls_025"><span class="cls_025">interface that is easy to navigate.</span></div>
+<div style="position:absolute;left:22.75px;top:474.13px" class="cls_025"><span class="cls_025">Tina Emerson is also a public user of the website that would use the system</span></div>
+<div style="position:absolute;left:22.75px;top:495.90px" class="cls_025"><span class="cls_025">as needed. Tina is based off the users that drive less frequently, but are still</span></div>
+<div style="position:absolute;left:22.75px;top:517.67px" class="cls_025"><span class="cls_025">important to consider in our design. She represents the users that were</span></div>
+<div style="position:absolute;left:22.75px;top:539.44px" class="cls_025"><span class="cls_025">interested in being able to share their experience at a carrier as well as</span></div>
+<div style="position:absolute;left:22.75px;top:561.21px" class="cls_025"><span class="cls_025">attractions nearby.</span></div>
+<div style="position:absolute;left:43.56px;top:582.97px" class="cls_025"><span class="cls_025">As a driver, I want to be able to share my experience at a shipper or</span></div>
+<div style="position:absolute;left:43.56px;top:604.74px" class="cls_025"><span class="cls_025">receiver so I can feel connected to a community of fellow drivers that</span></div>
+<div style="position:absolute;left:43.56px;top:626.51px" class="cls_025"><span class="cls_025">value my input.</span></div>
+<div style="position:absolute;left:22.75px;top:670.05px" class="cls_025"><span class="cls_025">Trevor Sampson is a private user of the website that would have access to</span></div>
+<div style="position:absolute;left:22.75px;top:691.81px" class="cls_025"><span class="cls_025">administrative controls. He would be able to upload the upcoming loads for</span></div>
+<div style="position:absolute;left:22.75px;top:713.58px" class="cls_025"><span class="cls_025">his drivers as well as take down reviews that are untrue or outdated. He</span></div>
+<div style="position:absolute;left:22.75px;top:735.35px" class="cls_025"><span class="cls_025">represents the client and future companies that adopt this system.</span></div>
+<div style="position:absolute;left:43.56px;top:757.12px" class="cls_025"><span class="cls_025">As a manager, I want to be able to make sure the reviews left are</span></div>
+<div style="position:absolute;left:43.56px;top:778.89px" class="cls_025"><span class="cls_025">accurate  so my drivers can plan their trips to be efficient.</span></div>
+<div style="position:absolute;left:359.78px;top:823.56px" class="cls_009"><span class="cls_009">Research and Inspiration | Page 17</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:13632px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background17.jpg" width=595 height=842></div>
+<div style="position:absolute;left:16.04px;top:46.81px" class="cls_005"><span class="cls_005">TYPE STUDIES</span></div>
+<div style="position:absolute;left:408.14px;top:194.93px" class="cls_026"><span class="cls_026">Roboto- Bold</span></div>
+<div style="position:absolute;left:397.66px;top:244.48px" class="cls_026"><span class="cls_026">Helvetica Neue-</span></div>
+<div style="position:absolute;left:432.96px;top:269.25px" class="cls_026"><span class="cls_026">Normal</span></div>
+<div style="position:absolute;left:394.13px;top:418.42px" class="cls_026"><span class="cls_026">Oswald- Medium</span></div>
+<div style="position:absolute;left:400.30px;top:467.96px" class="cls_026"><span class="cls_026">Calibri- Normal</span></div>
+<div style="position:absolute;left:401.08px;top:634.96px" class="cls_026"><span class="cls_026">Fira Sans- Bold</span></div>
+<div style="position:absolute;left:402.47px;top:684.50px" class="cls_026"><span class="cls_026">Proxima Nova-</span></div>
+<div style="position:absolute;left:432.96px;top:709.27px" class="cls_026"><span class="cls_026">Normal</span></div>
+<div style="position:absolute;left:377.70px;top:813.15px" class="cls_009"><span class="cls_009">Visual Design Concepts | Page 18</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:14484px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background18.jpg" width=595 height=842></div>
+<div style="position:absolute;left:16.04px;top:46.81px" class="cls_005"><span class="cls_005">LOGO STUDIES</span></div>
+<div style="position:absolute;left:375.53px;top:813.15px" class="cls_009"><span class="cls_009">Visual Design Concepts | Page 19</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:15336px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background19.jpg" width=595 height=842></div>
+<div style="position:absolute;left:16.04px;top:46.81px" class="cls_005"><span class="cls_005">COLOR SCHEMES</span></div>
+<div style="position:absolute;left:133.60px;top:310.02px" class="cls_009"><span class="cls_009">#0C2D48</span></div>
+<div style="position:absolute;left:373.93px;top:310.02px" class="cls_027"><span class="cls_027">#40AAA5</span></div>
+<div style="position:absolute;left:123.88px;top:329.53px" class="cls_009"><span class="cls_009">Oxford Blue</span></div>
+<div style="position:absolute;left:379.43px;top:329.53px" class="cls_027"><span class="cls_027">Keppel</span></div>
+<div style="position:absolute;left:134.19px;top:538.76px" class="cls_028"><span class="cls_028">#145DA0</span></div>
+<div style="position:absolute;left:373.55px;top:538.76px" class="cls_029"><span class="cls_029">#000000</span></div>
+<div style="position:absolute;left:124.50px;top:558.27px" class="cls_028"><span class="cls_028">Lapis Lazuli</span></div>
+<div style="position:absolute;left:384.58px;top:558.27px" class="cls_029"><span class="cls_029">Black</span></div>
+<div style="position:absolute;left:134.12px;top:762.68px" class="cls_030"><span class="cls_030">#2E8BC0</span></div>
+<div style="position:absolute;left:374.35px;top:762.68px" class="cls_031"><span class="cls_031">#C0C9CE</span></div>
+<div style="position:absolute;left:91.51px;top:782.19px" class="cls_030"><span class="cls_030">Cyan Cornflower Blue</span></div>
+<div style="position:absolute;left:355.78px;top:782.19px" class="cls_031"><span class="cls_031">Lavender Gray</span></div>
+<div style="position:absolute;left:372.48px;top:814.65px" class="cls_009"><span class="cls_009">Visual Design Concepts | Page 20</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:16188px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background20.jpg" width=595 height=842></div>
+<div style="position:absolute;left:22.75px;top:24.18px" class="cls_005"><span class="cls_005">SITE MAP</span></div>
+<div style="position:absolute;left:456.33px;top:809.58px" class="cls_009"><span class="cls_009">Site Map | Page 21</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:17040px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background21.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.77px;top:24.18px" class="cls_005"><span class="cls_005">WIREFRAMES</span></div>
+<div style="position:absolute;left:95.27px;top:133.29px" class="cls_009"><span class="cls_009">User Login > Search</span></div>
+<div style="position:absolute;left:360.75px;top:133.29px" class="cls_009"><span class="cls_009">User Login > Home</span></div>
+<div style="position:absolute;left:235.46px;top:477.75px" class="cls_009"><span class="cls_009">User Login > Profile</span></div>
+<div style="position:absolute;left:444.86px;top:809.16px" class="cls_009"><span class="cls_009">Wireframes | Page 23</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:17892px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="2d091052-8bd6-11ea-8b25-0cc47a792c0a_id_2d091052-8bd6-11ea-8b25-0cc47a792c0a_files/background22.jpg" width=595 height=842></div>
+<div style="position:absolute;left:37.77px;top:24.18px" class="cls_005"><span class="cls_005">MOCKUPS</span></div>
+<div style="position:absolute;left:453.86px;top:809.16px" class="cls_009"><span class="cls_009">Mockups | Page 24</span></div>
+</div>
+
+</body>
+</html>
